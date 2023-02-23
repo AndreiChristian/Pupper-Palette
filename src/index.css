@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/mission-gt-r-hollow-condensed');
+@import url("https://fonts.cdnfonts.com/css/mission-gt-r-hollow-condensed");
 
 * {
   padding: 0;
@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
-hmtl, body{
-  height: 100%;
+hmtl,
+body {
+  min-height: 100vh;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: stretch;
 }

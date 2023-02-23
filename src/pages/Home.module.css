@@ -1,5 +1,5 @@
 .container_night {
-  height: 70vh;
+  height: 70%;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 
 .container_day {
   background-color: white;
-  height: 70vh;
+  height: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
