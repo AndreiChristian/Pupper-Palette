@@ -1,0 +1,93 @@
+.container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2vh 0;
+}
+
+input{
+  padding: 1vh 4vw;
+  margin: 1vh 0;
+}
+
+.input{
+  border-radius: 20px;
+  border: 1.5px solid grey;
+}
+
+.input:focus{
+  border: 2px solid rgb(210 207 211 / 55%);
+  box-shadow: 0 0 2px 2px rgb(210 207 211 / 55%);
+  border-radius: 20px;
+}
+
+/* .input_blur{
+  border: 2px solid rgba(255, 166, 0, 0.503);
+  box-shadow: 0 0 3px 3px rgba(255, 166, 0, 0.499);
+  border-radius: 20px;
+
+}  */
+
+.valid{
+  border: 2px solid rgba(0, 128, 0, 0.658);
+  box-shadow: 0 0 3px 3px rgba(0, 128, 0, 0.503);
+  outline: 1px solid green;
+  border-radius: 20px;
+
+}
+
+.invalid{
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 3px 3px rgba(255, 0, 0, 0.5);
+  outline: 1px solid red;
+  border-radius: 20px;
+}
+
+.invalid:focus{
+  border: 2px solid rgba(255, 166, 0, 0.418);
+  box-shadow: 0 0 3px 3px rgba(255, 166, 0, 0.5);
+  outline: 1px solid orange;
+  border-radius: 20px;
+}
+
+button{
+  border-radius: 20px;
+  padding: 2vh 4vw;
+  border: 0;
+  box-shadow: 0 0 3px 3px rgba(124, 104, 238, 0.492);
+  background-color: mediumslateblue;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 40rem){
+  .container{
+    height: 90vh;
+    justify-content: center;
+  }
+
+  .title{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .subtitle{
+    font-size: 0.8;
+    text-align: center;
+  }
+}

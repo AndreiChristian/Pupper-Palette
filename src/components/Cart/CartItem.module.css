@@ -1,0 +1,103 @@
+.item {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 4px rgb(210 207 211 / 55%);
+  margin: 10px auto;
+  width: 70%;
+}
+
+.title {
+  width: 100px;
+  padding: 10px;
+}
+
+.modify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modify div {
+  padding: 0 5px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.item img {
+  max-width: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.chevronDown,
+.chevronUp {
+  /* stroke: grey; */
+  stroke-width: 1;
+  width: 7%;
+  transition: all 0.3s linear;
+}
+
+.chevronDown:hover {
+  stroke: orange;
+  stroke-width: 2.5;
+}
+
+.chevronUp:hover {
+  stroke: green;
+  stroke-width: 2.5;
+}
+
+.amount {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amount_child{
+color: gray;
+}
+
+.total_price {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.trash {
+  width: 5%;
+  margin-right: 10px;
+  transition: all 0.3s linear;
+}
+
+.trash:hover {
+  stroke: red;
+  stroke-width: 2;
+}
+
+@media (max-width: 40rem) {
+  .item {
+    flex-direction: column;
+  }
+
+  .item img {
+    max-width: 100%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .chevronUp,
+  .chevronDown {
+    width: 15%;
+  }
+
+  .trash {
+    align-self: flex-end;
+    width: 10%;
+    padding: 10px;
+  }
+}

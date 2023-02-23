@@ -1,0 +1,75 @@
+.container_day, .container_night{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container_night{
+    background-color: black;
+    color: white;
+}
+
+.container_day{
+    background-color: white;
+    color: black;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content div{
+    margin: 40px;
+    
+}
+
+.link{
+    /* color: red; */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.link svg{
+    width: 20%;
+}
+
+.container_day .link{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.container_night .link{
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+.errorImage{
+    width: 60%;
+    align-self: flex-end;
+}
+
+@media (max-width: 40rem){
+    .container_day, .container_night{
+        flex-direction: column-reverse;
+    }
+
+    .errorImage{
+        width: 100%;
+    }
+}

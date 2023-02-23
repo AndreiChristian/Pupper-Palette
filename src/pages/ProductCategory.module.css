@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.header {
+  align-self: flex-start;
+  font-size: 3rem;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header div{
+  margin: 0 1vw;
+}
+
+.header svg{
+    width: 6%;
+    transition: all 0.5s linear;
+    stroke: grey;
+}
+
+.header svg:hover{
+  /* width: 9%; */
+  stroke-width: 1.8;
+  stroke: white;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flex-direction: column;
+  width: 80vh; */
+}
+
+.story {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2vh 3vw;
+  font-style: italic;
+}
+
+@media (max-width: 40rem){
+  .items{
+    flex-direction: column;
+  }
+  .story{
+    padding: 2vh 10vw;
+  }
+}

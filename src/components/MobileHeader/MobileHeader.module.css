@@ -1,0 +1,88 @@
+.container {
+  position: sticky;
+  width: 100vw;
+  height: 10vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-family: "Mission GT-R Hollow", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2vw;
+}
+
+.pupper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pupper div {
+  margin: 0 0.3rem;
+  font-family: "Mission GT-R Hollow", sans-serif;
+  color: #fff;
+  /* text-shadow:
+      0 0 4px #fff,
+      0 0 5px red,
+      0 0 6px red,
+      0 0 7px red,
+      0 0 10px red,
+      0 0 21px red; */
+}
+
+/* first letter -P upper */
+.one {
+  text-shadow: 0 0 4px #fff, 0 0 5px blue, 0 0 6px blue, 0 0 7px blue,
+    0 0 10px blue, 0 0 21px blue;
+  transform: rotate(-10deg);
+}
+
+/* second letter -pUpper */
+
+.two {
+  text-shadow: 0 0 4px #fff, 0 0 5px yellow, 0 0 6px yellow, 0 0 7px yellow,
+    0 0 10px yellow, 0 0 21px yellow;
+  transform: rotate(0deg);
+}
+
+/* third letter - puPper */
+
+.three {
+  text-shadow: 0 0 4px #fff, 0 0 5px purple, 0 0 6px purple, 0 0 7px purple,
+    0 0 10px purple, 0 0 21px purple;
+  transform: rotate(10deg);
+}
+
+.four {
+  text-shadow: 0 0 4px #fff, 0 0 5px red, 0 0 6px red, 0 0 7px red, 0 0 10px red,
+    0 0 21px red;
+  transform: rotate(-20deg);
+}
+
+.five {
+  text-shadow: 0 0 4px #fff, 0 0 5px green, 0 0 6px green, 0 0 7px green,
+    0 0 10px green, 0 0 21px green;
+  transform: rotate(-40deg);
+}
+
+.six {
+  text-shadow: 0 0 4px #fff, 0 0 5px orange, 0 0 6px orange, 0 0 7px orange,
+    0 0 10px orange, 0 0 21px orange;
+  transform: rotate(-20deg);
+}
+
+.palette {
+  transform: translateY(1vh);
+  margin-left: 1rem;
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  color: rgba(124, 104, 238, 0.627);
+  text-shadow: 0 0 4px mediumslateblue;
+}

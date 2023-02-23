@@ -1,0 +1,47 @@
+.container{
+    max-width: 100%;
+    height: 7vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+    z-index: 5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.container div{
+    width: 25vw;
+    /* background: red; */
+    /* background: red;
+    outline: 3px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div svg{
+    width: 35%;
+    margin: auto;
+    stroke-width: 1;
+}
+
+.container .active  svg{
+    stroke: purple;
+    fill: purple;
+}
+
+.home_title{
+    font-family: "Mission GT-R Hollow", sans-serif;
+    color: purple;
+}

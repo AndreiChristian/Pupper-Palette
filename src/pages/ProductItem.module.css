@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid red; */
+    width: 20vw;
+    height: 60vh;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgb(210 207 211 / 55%);
+    /* filter: blur(3px); */
+    text-align: center;
+    transition: all 0.5s 0.5s linear;
+}
+
+
+.container img{
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+    transition: width 0.5s 0.8s linear;
+}
+
+.container div{
+    margin: 10px;
+    text-decoration: none;
+}
+
+.actions{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all  0.2s 0.3s;
+}
+
+.actions svg{
+    width: 15%;
+    stroke-width: 1;
+    transition: all 0.5s linear;
+}
+
+
+
+.actions svg:last-of-type:hover{
+    stroke: green;
+    /* transform: rotate(360deg); */
+    /* transition: all 0.5s linear; */
+    /* width: 20%; */
+}
+
+.liked_item{
+    stroke: red;
+    fill: red;
+    transform: rotate(360deg);
+    transition: all 3s linear;
+}
+
+@media (max-width: 40rem){
+    .container{
+      width: 35vh;
+    }
+  }

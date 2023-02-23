@@ -1,0 +1,122 @@
+.container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  /* position: absolute; */
+}
+
+.container > div {
+  margin: 20px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px rgb(210 207 211 / 55%);
+  height: 60vh;
+}
+
+.item img {
+  flex-grow: 3;
+  flex-basis: 3;
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.info {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2vh 2vw;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions svg {
+  width: 10%;
+}
+
+.dogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flex-grow: 1;
+  flex-grow: 1; */
+}
+
+.dogs img {
+  box-shadow: 0 0 2px 2px rgb(210 207 211 / 55%);
+  margin: 1.5vh 1.5vw;
+  width: 15%;
+  border-radius: 10px;
+}
+
+.dogs_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2vh 2vw;
+}
+
+.actions svg:last-of-type:hover{
+  stroke: green;
+  /* transform: rotate(360deg); */
+  /* transition: all 0.5s linear; */
+  /* width: 20%; */
+}
+
+.liked_item{
+  stroke: red;
+  fill: red;
+  transform: rotate(360deg);
+  transition: all 0.5s linear;
+}
+
+@media (max-width: 40rem){
+  .item{
+    flex-direction: column;
+  }
+  .item img{
+    width: 40vh;
+  }
+
+  .dogs_img{
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+
+  .dogs img{
+    width: 40%;
+  }
+
+  .new{
+    width: 46vh;
+  }
+}
+
+

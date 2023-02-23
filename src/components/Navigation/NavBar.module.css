@@ -1,0 +1,258 @@
+.navigation {
+  width: 100%;
+  /* height: 10%; */
+  height: 20vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+.stateContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: mediumslateblue;
+  box-shadow: 0 0 2px 2px rgba(124, 104, 238, 0.344);
+  border-radius: 20px;
+  transform: translateX(20px);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: mediumslateblue;
+  box-shadow: 0 0 2px 2px rgba(124, 104, 238, 0.344);
+
+
+}
+
+.link {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  /* box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.111); */
+  /* transition: all 0.8s linear; */
+  color: white;
+}
+
+.link:hover {
+  
+  background-color: rgba(255, 255, 255, 0.111);
+}
+
+.active {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: purple;
+  background-color: white;
+}
+
+.cartButton svg {
+  width: 25px;
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  stroke: purple;
+}
+
+.cartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: purple;
+  stroke: purple;
+  box-shadow: none;
+}
+
+.active .cartButton,
+.active .cartButton svg {
+  background-color: white;
+  stroke: purple;
+  color: purple;
+  box-shadow: none;
+}
+
+.lightSwitcher {
+  max-width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightSwitcher svg {
+  width: 30%;
+  stroke: purple;
+  /* fill: purple; */
+}
+
+.wishlist{
+  max-width: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlist svg{
+  width: 70%;
+  stroke: purple;
+}
+
+.wishlist .active_heart svg{
+  stroke: white;
+  fill: white;
+}
+
+.arrow{
+  width: 5vw;
+  padding: 10px;
+  border-left: 2px solid purple;
+  /* transition: all 0.5s linear; */
+}
+
+.arrow svg{
+  width: 40%;
+  /* transform: rotate(180deg); */
+  transition: all 0.2s linear;
+  color: purple;
+}
+
+.arrow_reverse{
+  width: 5vw;
+  padding: 10px;
+  padding-left: 20px;
+  /* transition: all 0.5s linear;  */
+}
+
+.arrow_reverse svg{
+  width: 40%;
+  transform: rotate(180deg);
+  transition: all 0.2s linear;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: 'Mission GT-R Hollow', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2vw;
+}
+
+.pupper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pupper div{
+  margin: 0 0.3rem;
+  font-family: 'Mission GT-R Hollow', sans-serif;
+  color: #fff;
+  /* text-shadow:
+    0 0 4px #fff,
+    0 0 5px red,
+    0 0 6px red,
+    0 0 7px red,
+    0 0 10px red,
+    0 0 21px red; */
+}
+
+/* first letter -P upper */
+.one{
+  text-shadow:
+    0 0 4px #fff,
+    0 0 5px blue,
+    0 0 6px blue,
+    0 0 7px blue,
+    0 0 10px blue,
+    0 0 21px blue;
+    transform: rotate(-10deg);
+}
+
+/* second letter -pUpper */
+
+.two{
+  text-shadow:
+    0 0 4px #fff,
+    0 0 5px yellow,
+    0 0 6px yellow,
+    0 0 7px yellow,
+    0 0 10px yellow,
+    0 0 21px yellow;
+    transform: rotate(0deg);
+}
+
+/* third letter - puPper */
+
+.three{
+  text-shadow:
+    0 0 4px #fff,
+    0 0 5px purple,
+    0 0 6px purple,
+    0 0 7px purple,
+    0 0 10px purple,
+    0 0 21px purple;
+    transform: rotate(10deg);
+}
+
+.four{
+  text-shadow:
+    0 0 4px #fff,
+    0 0 5px red,
+    0 0 6px red,
+    0 0 7px red,
+    0 0 10px red,
+    0 0 21px red;
+    transform: rotate(-20deg);
+}
+
+.five{
+  text-shadow:
+    0 0 4px #fff,
+    0 0 5px green,
+    0 0 6px green,
+    0 0 7px green,
+    0 0 10px green,
+    0 0 21px green;
+    transform: rotate(-40deg);
+}
+
+.six{
+  text-shadow:
+    0 0 4px #fff,
+    0 0 5px orange,
+    0 0 6px orange,
+    0 0 7px orange,
+    0 0 10px orange,
+    0 0 21px orange;
+    transform: rotate(-20deg);
+}
+
+
+
+
+.palette{
+  transform: translateY(1vh);
+  margin-left: 1.5rem ;
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  color: rgba(124, 104, 238, 0.627);
+  text-shadow:
+    0 0 4px mediumslateblue;
+    
+}

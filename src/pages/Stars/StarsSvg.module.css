@@ -1,0 +1,19 @@
+.star{
+    /* background-color: rgba(240, 248, 255, 0); */
+    z-index: 1;
+    /* outline: red 3px solid; */
+}
+
+.star svg{
+    width: 10%;
+    stroke: rgba(124, 104, 238, 1);
+    outline: 2px solid red;
+    z-index: 2;
+}
+
+.star_svg{
+    width: 10%;
+    stroke: rgba(124, 104, 238, 1);
+    outline: 2px solid red;
+    z-index: 2;
+}
