@@ -7,3 +7,7 @@
   user-select: none;
   scroll-behavior: smooth;
 }
+
+hmtl, body{
+  height: 100%;
+}
